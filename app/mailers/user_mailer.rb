@@ -15,7 +15,7 @@ class UserMailer < ApplicationMailer
 
   def new_founder_email(founder)
     #on récupère l'instance founder pour ensuite pouvoir les passer à la view en @founder
-    @founder = startup
+    @founder = founder
 
     #on définit une variable @url qu'on utilisera dans la view d’e-mail
     @url  = 'http://startupstudio.fr/ignition' 
