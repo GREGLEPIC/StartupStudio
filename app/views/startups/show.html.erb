@@ -1,2 +1,34 @@
-<h1>Startups#show</h1>
-<p>Find me in app/views/startups/show.html.erb</p>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Start date:</strong>
+  <%= @startup.start_date %>
+</p>
+
+<p>
+  <strong>Duration:</strong>
+  <%= @startup.duration %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @startup.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @startup.description %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @startup.price %>
+</p>
+
+<p>
+  <strong>:</strong>
+  <%= @startup. %>
+</p>
+
+<%= link_to 'Edit', edit_startup_path(@startup) %> |
+<%= link_to 'Back', startups_path %>

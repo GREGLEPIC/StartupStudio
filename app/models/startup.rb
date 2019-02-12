@@ -1,5 +1,4 @@
 class Startup < ApplicationRecord
-
     has_many :founders
     has_many :users, through: :founders
 
@@ -35,5 +34,3 @@ class Startup < ApplicationRecord
           duration%5 != 0
     end
 end
-
-
