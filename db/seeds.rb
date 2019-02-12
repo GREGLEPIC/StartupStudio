@@ -9,7 +9,7 @@
 require 'faker'
 
 10.times do 
-    User.create!(first_name: Faker::Name.first_name, last_name: Faker::Name.last_name, description: Faker::BojackHorseman.quote, city: Faker::Address.city, email: "#{Faker::Name.first_name}@yopmail.com", phone: Faker::Number.number(8), encrypted_password: Faker::Internet.password(10, 20))
+    User.create!(first_name: Faker::Name.first_name, last_name: Faker::Name.last_name, description: Faker::BojackHorseman.quote, city: Faker::Address.city, phone: Faker::Number.number(8))
 end
 
 10.times do 

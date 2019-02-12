@@ -14,12 +14,10 @@ class Startup < ApplicationRecord
 
     validates :title, 
         presence: true,
-        length: { minimum: 5 },
-        length: { maximum: 140 }
+        length: { in: 5..40 }
     validates :description, 
         presence: true,
-        length: { minimum: 20 },
-        length: { maximum: 1000 }
+        length: { in: 20..1000 }
     validates :price, 
         presence: true,
         length: { minimum: 1 },

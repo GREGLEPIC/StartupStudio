@@ -19,6 +19,8 @@ gem 'uglifier', '>= 1.3.0'
 # Use faker to create simple seed database
 gem 'faker', '~> 1.9', '>= 1.9.1'
 
+gem 'devise', '~> 4.2'
+
 # Use table_print to have a better view of our database in the rails console
 gem 'table_print', '~> 1.5', '>= 1.5.6'
 
